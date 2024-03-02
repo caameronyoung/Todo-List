@@ -1,0 +1,41 @@
+#frameContainer
+{
+    padding-right: 33%;
+    padding-left: 33%;
+}
+
+#frame
+{
+    border: 1px solid black;
+}
+
+.container /*used to align items in a grid! will be made in to a table for ease of use (less lines)*/
+{
+    color:black;
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    text-align: center;
+}
+
+.item /*the items inside the contatiner will become table cells to evenly space and/or center them appropriately!*/
+{
+    display: table-cell;
+    text-align: center;
+}
+
+.twentySplit
+{
+    display: table-cell;
+    text-align: center;
+    width: 20%;
+    padding-left: 5%;
+}
+
+.eightySplit
+{
+    display: table-cell;
+    text-align: center;
+    width: 80%;
+    padding-right: 5%;
+}    
