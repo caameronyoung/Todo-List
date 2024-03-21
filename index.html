@@ -6,8 +6,8 @@
     <title>Daily Todo List Tracker</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="scripts.js" defer></script>
-    <!--last update 4.40pm 2/4/24-->
-    <!---next task: adding check boxes and a list of tasks, and the date!-->
+    <!--last update 3.45pm 21/3/24-->
+    <!---next task: adding multiple tasks depending on day-->
 </head>
 <body>
     <!---id: unique
@@ -33,11 +33,12 @@
                     <div class="container">
                         <div class="twentySplit">
                             <p>click for shape</p>
-                            <canvas id="myCanvas" onclick="drawShape();"></canvas>
+                            <canvas id="myCanvas"></canvas>
                         </div>
                         <div class="eightySplit">
                             <p>80</p>
                             <p>task will go here</p>
+                            <p id="task">Open this doc</p>
                         </div>
                     </div>
                 </div>
