@@ -29,6 +29,28 @@ ctx.fillStyle = 'black';
 ctx.fillRect(20,20,30,30);
 let clicked = false;
 
+
+//counting completed tasks
+let completedTask = 0;
+let totalTasks = 7;
+function addCompleted()
+{
+    completedTask++;
+    console.log(completedTask);
+    //remove its current text
+    document.getElementById('taskCount').innerText = "Completed Tasks: ";
+    if (completedTask == totalTasks)
+    {
+        console.log('tasks done!');
+        document.getElementById('taskCount').innerText = totalTasks  + '/' + totalTasks;
+    }
+    else
+    {
+        document.getElementById('taskCount').innerText += completedTask + '/' + totalTasks;
+    }
+    
+}
+
 //event listener so if clicked it toggles the colour yep yep
 
 canvas.addEventListener('click', testFunction)
@@ -40,6 +62,8 @@ function testFunction()
         ctx.fillRect(20,20,30,30);
         clicked = true;
         chore.style.color = 'green';
+        addCompleted();
+
     }
     else if (clicked)
     {
